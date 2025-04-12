@@ -10,7 +10,7 @@ func FileRoutes(r *gin.Engine) {
 	files := r.Group("/files")
 	{
 		//files.GET("/", controllers.GetBooks)
-		files.POST("/", controllers.FormatFile)
+		files.POST("/format", controllers.FormatFile)
 		//files.DELETE("/:id", controllers.DeleteBook)
 	}
 }
